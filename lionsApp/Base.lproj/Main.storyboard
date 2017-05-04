@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -43,35 +43,16 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="S1R-mD-bb1">
-            <objects>
-                <viewController id="dwM-we-uyd" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vsh-gK-iTl"/>
-                        <viewControllerLayoutGuide type="bottom" id="ial-R6-8gP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="v8d-lU-Vjw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="Vg9-0f-mgM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ikK-dG-Naj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1" y="770"/>
-        </scene>
         <!--Calendar-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="CalendarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -102,7 +83,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,7 +92,7 @@
         <!--Help-->
         <scene sceneID="jDT-ur-AS7">
             <objects>
-                <viewController id="e8h-v8-u5O" sceneMemberID="viewController">
+                <viewController id="e8h-v8-u5O" customClass="HelpViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yQX-Oh-2aG"/>
                         <viewControllerLayoutGuide type="bottom" id="SoC-p7-eVd"/>
@@ -127,10 +108,29 @@
             </objects>
             <point key="canvasLocation" x="-794" y="619"/>
         </scene>
-        <!--More-->
+        <!--Maps-->
+        <scene sceneID="Z5b-pU-MI1">
+            <objects>
+                <viewController id="Fq3-qf-SEc" customClass="MapViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fPL-RW-8qf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bh6-bp-m8Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pEq-6E-Qni">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Maps" id="Brc-2T-KZm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rbl-d5-v52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="757"/>
+        </scene>
+        <!--More View Controller-->
         <scene sceneID="Hrj-Db-ijB">
             <objects>
-                <viewController id="WqC-dU-qf9" sceneMemberID="viewController">
+                <viewController id="WqC-dU-qf9" customClass="MoreViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bIN-or-u6N"/>
                         <viewControllerLayoutGuide type="bottom" id="g3P-10-COY"/>
@@ -140,7 +140,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" id="DbW-EB-Zv4"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="DbW-EB-Zv4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bs7-aM-Ok1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,8 +159,8 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="dwM-we-uyd" kind="relationship" relationship="viewControllers" id="GW0-EL-B3g"/>
                         <segue destination="e8h-v8-u5O" kind="relationship" relationship="viewControllers" id="qB3-dO-hMT"/>
+                        <segue destination="Fq3-qf-SEc" kind="relationship" relationship="viewControllers" id="Ser-4C-C4I"/>
                         <segue destination="WqC-dU-qf9" kind="relationship" relationship="viewControllers" id="Ucf-lf-NL5"/>
                     </connections>
                 </tabBarController>
@@ -169,8 +169,4 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-    </resources>
 </document>
