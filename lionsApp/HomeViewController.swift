@@ -7,19 +7,14 @@
 //
 
 import UIKit
+import TwitterKit
 
-class FirstViewController: UIViewController {
-
+class FirstViewController: TWTRTimelineViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let client = TWTRAPIClient()
+        self.dataSource = TWTRUserTimelineDataSource(screenName: "fabric", apiClient: client)
+        self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

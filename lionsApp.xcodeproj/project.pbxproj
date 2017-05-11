@@ -18,6 +18,10 @@
 		13DD26EE1EBA49CA00E7C293 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26ED1EBA49CA00E7C293 /* MapViewController.swift */; };
 		13DD26F01EBA49E100E7C293 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26EF1EBA49E100E7C293 /* MoreViewController.swift */; };
 		13DD26F21EBA4A4100E7C293 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26F11EBA4A4100E7C293 /* HelpViewController.swift */; };
+		B7132E4F1EC3DBFA00A570DB /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7132E4B1EC3DBFA00A570DB /* Fabric.framework */; };
+		B7132E501EC3DBFA00A570DB /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7132E4C1EC3DBFA00A570DB /* TwitterKit.framework */; };
+		B7132E511EC3DBFA00A570DB /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7132E4D1EC3DBFA00A570DB /* TwitterKitResources.bundle */; };
+		B7132E521EC3DBFA00A570DB /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7132E4E1EC3DBFA00A570DB /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		13DD26ED1EBA49CA00E7C293 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		13DD26EF1EBA49E100E7C293 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		13DD26F11EBA4A4100E7C293 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		B7132E4B1EC3DBFA00A570DB /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		B7132E4C1EC3DBFA00A570DB /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		B7132E4D1EC3DBFA00A570DB /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		B7132E4E1EC3DBFA00A570DB /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7132E4F1EC3DBFA00A570DB /* Fabric.framework in Frameworks */,
+				B7132E521EC3DBFA00A570DB /* TwitterCore.framework in Frameworks */,
+				B7132E501EC3DBFA00A570DB /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +116,10 @@
 		13DD26BC1EBA455200E7C293 /* lionsApp */ = {
 			isa = PBXGroup;
 			children = (
+				B7132E4B1EC3DBFA00A570DB /* Fabric.framework */,
+				B7132E4C1EC3DBFA00A570DB /* TwitterKit.framework */,
+				B7132E4D1EC3DBFA00A570DB /* TwitterKitResources.bundle */,
+				B7132E4E1EC3DBFA00A570DB /* TwitterCore.framework */,
 				13DD26BD1EBA455200E7C293 /* AppDelegate.swift */,
 				13DD26BF1EBA455200E7C293 /* HomeViewController.swift */,
 				13DD26C11EBA455200E7C293 /* CalendarViewController.swift */,
@@ -147,6 +162,7 @@
 				13DD26B61EBA455200E7C293 /* Sources */,
 				13DD26B71EBA455200E7C293 /* Frameworks */,
 				13DD26B81EBA455200E7C293 /* Resources */,
+				B7132E4A1EC3DBE000A570DB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -200,7 +216,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = COHS;
 				TargetAttributes = {
 					13DD26B91EBA455200E7C293 = {
@@ -244,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7132E511EC3DBFA00A570DB /* TwitterKitResources.bundle in Resources */,
 				13DD26CA1EBA455200E7C293 /* LaunchScreen.storyboard in Resources */,
 				13DD26C71EBA455200E7C293 /* Assets.xcassets in Resources */,
 				13DD26C51EBA455200E7C293 /* Main.storyboard in Resources */,
@@ -265,6 +282,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7132E4A1EC3DBE000A570DB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 57c134a4747ca0a572bfca1bf1cccb0e4e4580de 72f3e1db07885f4b3014aca6864a771636aafaa227d75fc06176412e5f4bd04b";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13DD26B61EBA455200E7C293 /* Sources */ = {
@@ -349,6 +382,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -399,6 +433,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -428,6 +463,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = lionsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COHS.lionsApp;
@@ -440,6 +479,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = lionsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = COHS.lionsApp;
@@ -521,6 +564,7 @@
 				13DD26E61EBA455200E7C293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13DD26E71EBA455200E7C293 /* Build configuration list for PBXNativeTarget "lionsAppTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +573,7 @@
 				13DD26E91EBA455200E7C293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13DD26EA1EBA455200E7C293 /* Build configuration list for PBXNativeTarget "lionsAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +582,7 @@
 				13DD26EC1EBA455200E7C293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
