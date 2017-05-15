@@ -14,7 +14,7 @@ class FirstViewController: TWTRTimelineViewController {
         super.viewDidLoad()
         
         let client = TWTRAPIClient()
-        self.dataSource = TWTRUserTimelineDataSource(screenName: "eviceCOHS", apiClient: client)
+        self.dataSource = TWTRListTimelineDataSource(listSlug: "COHSLions", listOwnerScreenName: "cohs_lions", apiClient: client)
         self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
     }
 }
