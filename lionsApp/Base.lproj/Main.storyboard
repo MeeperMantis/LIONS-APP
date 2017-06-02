@@ -1,46 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Calendar-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gre-al-uiL">
-                                <rect key="frame" x="143" y="320" width="89" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="750" y="360"/>
-        </scene>
-        <!--Help-->
+        <!--Bell-->
         <scene sceneID="jDT-ur-AS7">
             <objects>
-                <viewController id="e8h-v8-u5O" customClass="HelpViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e8h-v8-u5O" customClass="BellViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yQX-Oh-2aG"/>
                         <viewControllerLayoutGuide type="bottom" id="SoC-p7-eVd"/>
@@ -49,21 +22,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qY5-0x-aeA">
-                                <rect key="frame" x="163" y="319" width="48" height="28"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BellSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="HK1-Tp-1aY">
+                                <rect key="frame" x="0.0" y="85" width="375" height="464"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bell Schedule" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kp-5M-y3K">
+                                <rect key="frame" x="104" y="46" width="166" height="31"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="27"/>
+                                <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.10620961338281631" green="0.23859858512878418" blue="0.42955648899078369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="8kp-5M-y3K" secondAttribute="trailing" constant="89" id="B00-Z8-j3P"/>
+                            <constraint firstItem="8kp-5M-y3K" firstAttribute="top" secondItem="yQX-Oh-2aG" secondAttribute="bottom" constant="26" id="NzX-BS-Baz"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Help" id="BT0-Fv-wuf"/>
+                    <tabBarItem key="tabBarItem" title="Bell" image="Bell-50" selectedImage="Bell-50" id="BT0-Fv-wuf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FuJ-jE-i5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794" y="619"/>
+            <point key="canvasLocation" x="-794.39999999999998" y="618.44077961019491"/>
         </scene>
         <!--Maps-->
         <scene sceneID="Z5b-pU-MI1">
@@ -77,26 +57,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftI-jM-yjn">
-                                <rect key="frame" x="159" y="319" width="57" height="28"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="firstFloor2" translatesAutoresizingMaskIntoConstraints="NO" id="DcB-x4-vLZ">
+                                <rect key="frame" x="0.0" y="80" width="375" height="422"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GS7-X9-L6o">
+                                <rect key="frame" x="161" y="39" width="53" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.10620961338281631" green="0.23859858512878418" blue="0.42955648899078369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GS7-X9-L6o" firstAttribute="top" secondItem="fPL-RW-8qf" secondAttribute="bottom" constant="19" id="A8K-JN-lqZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GS7-X9-L6o" secondAttribute="trailing" constant="145" id="Q2D-mN-lbm"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Maps" id="Brc-2T-KZm"/>
+                    <tabBarItem key="tabBarItem" title="Maps" image="Map-50" selectedImage="Map-50" id="Brc-2T-KZm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbl-d5-v52" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="757"/>
+            <point key="canvasLocation" x="1004" y="680.5097451274363"/>
         </scene>
-        <!--More View Controller-->
+        <!--Lunch-->
         <scene sceneID="Hrj-Db-ijB">
             <objects>
-                <viewController id="WqC-dU-qf9" customClass="MoreViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WqC-dU-qf9" customClass="LunchViewController" customModule="lionsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bIN-or-u6N"/>
                         <viewControllerLayoutGuide type="bottom" id="g3P-10-COY"/>
@@ -105,21 +92,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBi-8X-tme">
-                                <rect key="frame" x="166" y="323" width="55" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2017-05-30 at 10.25.38 PM" translatesAutoresizingMaskIntoConstraints="NO" id="lbp-3N-VsY">
+                                <rect key="frame" x="39" y="20" width="297" height="497"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.10620961338281631" green="0.23859858512878418" blue="0.42955648899078369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g3P-10-COY" firstAttribute="top" secondItem="lbp-3N-VsY" secondAttribute="bottom" constant="101" id="Aeu-YY-2C2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lbp-3N-VsY" secondAttribute="trailing" constant="23" id="kqZ-OU-ZEV"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="DbW-EB-Zv4"/>
+                    <tabBarItem key="tabBarItem" title="Lunch" image="Restaurant-50" selectedImage="Restaurant-50" id="DbW-EB-Zv4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bs7-aM-Ok1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-871" y="-304"/>
+            <point key="canvasLocation" x="-871.20000000000005" y="-304.4977511244378"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -133,7 +120,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="UE1-8e-5zD" kind="relationship" relationship="viewControllers" id="FQA-3v-h9H"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="e8h-v8-u5O" kind="relationship" relationship="viewControllers" id="qB3-dO-hMT"/>
                         <segue destination="Fq3-qf-SEc" kind="relationship" relationship="viewControllers" id="Ser-4C-C4I"/>
                         <segue destination="WqC-dU-qf9" kind="relationship" relationship="viewControllers" id="Ucf-lf-NL5"/>
@@ -156,11 +142,20 @@
                             <outlet property="delegate" destination="UE1-8e-5zD" id="0bl-jq-rJT"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" id="tlx-sV-k3U"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-50" selectedImage="Home-50" id="tlx-sV-k3U"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ro-Rk-WCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="841" y="-391"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bell-50" width="25" height="25"/>
+        <image name="BellSchedule" width="1458" height="2083"/>
+        <image name="Home-50" width="25" height="25"/>
+        <image name="Map-50" width="25" height="25"/>
+        <image name="Restaurant-50" width="25" height="25"/>
+        <image name="Screen Shot 2017-05-30 at 10.25.38 PM" width="284" height="465"/>
+        <image name="firstFloor2" width="857" height="631"/>
+    </resources>
 </document>

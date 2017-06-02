@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		13DD26BE1EBA455200E7C293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26BD1EBA455200E7C293 /* AppDelegate.swift */; };
 		13DD26C01EBA455200E7C293 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26BF1EBA455200E7C293 /* HomeViewController.swift */; };
-		13DD26C21EBA455200E7C293 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26C11EBA455200E7C293 /* CalendarViewController.swift */; };
 		13DD26C51EBA455200E7C293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DD26C31EBA455200E7C293 /* Main.storyboard */; };
 		13DD26C71EBA455200E7C293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DD26C61EBA455200E7C293 /* Assets.xcassets */; };
 		13DD26CA1EBA455200E7C293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DD26C81EBA455200E7C293 /* LaunchScreen.storyboard */; };
 		13DD26D51EBA455200E7C293 /* lionsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26D41EBA455200E7C293 /* lionsAppTests.swift */; };
 		13DD26E01EBA455200E7C293 /* lionsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26DF1EBA455200E7C293 /* lionsAppUITests.swift */; };
 		13DD26EE1EBA49CA00E7C293 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26ED1EBA49CA00E7C293 /* MapViewController.swift */; };
-		13DD26F01EBA49E100E7C293 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26EF1EBA49E100E7C293 /* MoreViewController.swift */; };
-		13DD26F21EBA4A4100E7C293 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26F11EBA4A4100E7C293 /* HelpViewController.swift */; };
+		13DD26F01EBA49E100E7C293 /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26EF1EBA49E100E7C293 /* LunchViewController.swift */; };
+		13DD26F21EBA4A4100E7C293 /* BellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD26F11EBA4A4100E7C293 /* BellViewController.swift */; };
 		B7132E4F1EC3DBFA00A570DB /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7132E4B1EC3DBFA00A570DB /* Fabric.framework */; };
 		B7132E501EC3DBFA00A570DB /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7132E4C1EC3DBFA00A570DB /* TwitterKit.framework */; };
 		B7132E511EC3DBFA00A570DB /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7132E4D1EC3DBFA00A570DB /* TwitterKitResources.bundle */; };
@@ -45,7 +44,6 @@
 		13DD26BA1EBA455200E7C293 /* lionsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lionsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DD26BD1EBA455200E7C293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13DD26BF1EBA455200E7C293 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		13DD26C11EBA455200E7C293 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		13DD26C41EBA455200E7C293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13DD26C61EBA455200E7C293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13DD26C91EBA455200E7C293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +55,8 @@
 		13DD26DF1EBA455200E7C293 /* lionsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lionsAppUITests.swift; sourceTree = "<group>"; };
 		13DD26E11EBA455200E7C293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13DD26ED1EBA49CA00E7C293 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		13DD26EF1EBA49E100E7C293 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
-		13DD26F11EBA4A4100E7C293 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		13DD26EF1EBA49E100E7C293 /* LunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
+		13DD26F11EBA4A4100E7C293 /* BellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BellViewController.swift; sourceTree = "<group>"; };
 		B7132E4B1EC3DBFA00A570DB /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		B7132E4C1EC3DBFA00A570DB /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
 		B7132E4D1EC3DBFA00A570DB /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
@@ -122,10 +120,9 @@
 				B7132E4E1EC3DBFA00A570DB /* TwitterCore.framework */,
 				13DD26BD1EBA455200E7C293 /* AppDelegate.swift */,
 				13DD26BF1EBA455200E7C293 /* HomeViewController.swift */,
-				13DD26C11EBA455200E7C293 /* CalendarViewController.swift */,
 				13DD26ED1EBA49CA00E7C293 /* MapViewController.swift */,
-				13DD26EF1EBA49E100E7C293 /* MoreViewController.swift */,
-				13DD26F11EBA4A4100E7C293 /* HelpViewController.swift */,
+				13DD26EF1EBA49E100E7C293 /* LunchViewController.swift */,
+				13DD26F11EBA4A4100E7C293 /* BellViewController.swift */,
 				13DD26C31EBA455200E7C293 /* Main.storyboard */,
 				13DD26C61EBA455200E7C293 /* Assets.xcassets */,
 				13DD26C81EBA455200E7C293 /* LaunchScreen.storyboard */,
@@ -304,9 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13DD26F01EBA49E100E7C293 /* MoreViewController.swift in Sources */,
-				13DD26F21EBA4A4100E7C293 /* HelpViewController.swift in Sources */,
-				13DD26C21EBA455200E7C293 /* CalendarViewController.swift in Sources */,
+				13DD26F01EBA49E100E7C293 /* LunchViewController.swift in Sources */,
+				13DD26F21EBA4A4100E7C293 /* BellViewController.swift in Sources */,
 				13DD26BE1EBA455200E7C293 /* AppDelegate.swift in Sources */,
 				13DD26C01EBA455200E7C293 /* HomeViewController.swift in Sources */,
 				13DD26EE1EBA49CA00E7C293 /* MapViewController.swift in Sources */,

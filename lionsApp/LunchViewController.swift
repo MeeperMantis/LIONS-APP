@@ -1,5 +1,5 @@
 //
-//  HelpViewController.swift
+//  MoreViewController.swift
 //  lionsApp
 //
 //  Created by Nguyen Hoang on 5/3/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HelpViewController: UIViewController {
+class LunchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
